@@ -3,3 +3,12 @@ input {
   margin: 10px 0;
   width: 100%;
 }
+
+hr {
+  margin: 10 0;
+}
+
+.blue {
+  background-color: blue;
+  color: white;
+}
