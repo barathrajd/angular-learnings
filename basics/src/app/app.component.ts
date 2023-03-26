@@ -8,8 +8,9 @@ import { Component } from '@angular/core';
   // styles: [''],
 })
 export class AppComponent {
-  name = 'John';
+  name = 'john';
   imgUrl = 'https://picsum.photos/id/237/500/500';
+  currentDate = new Date();
 
   getName() {
     return this.name;
@@ -17,5 +18,9 @@ export class AppComponent {
 
   changeImage(e: KeyboardEvent) {
     this.imgUrl = (e.target as HTMLInputElement).value;
+  }
+
+  logImage(e: string) {
+    console.log(e);
   }
 }
