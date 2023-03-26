@@ -11,6 +11,12 @@ export class AppComponent {
   name = 'john';
   imgUrl = 'https://picsum.photos/id/237/500/500';
   currentDate = new Date();
+  cost = 2000;
+  temp = 35.5;
+  pizza = {
+    toppings: ['panner', 'onion'],
+    size: 'large',
+  };
 
   getName() {
     return this.name;
