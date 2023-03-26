@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
   // styles: [''],
 })
-export class AppComponent {}
+export class AppComponent {
+  name = 'John';
+  imgUrl = 'https://picsum.photos/id/237/500/500';
+
+  getName() {
+    return this.name;
+  }
+
+  changeImage(e: KeyboardEvent) {
+    this.imgUrl = (e.target as HTMLInputElement).value;
+  }
+}
